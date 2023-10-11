@@ -76,8 +76,8 @@ else if(args[0].contains("?")){
             String i[]=r.split(",");
             boolean done=false;
             String t=args[0].substring(1);
-            for(int idx=0;idx<i.length && !done;idx++){
-                if(i[idx].equals(t)){
+            for(int index=0;index<i.length && !done;index++){
+                if(i[index].equals(t)){
                     System.out.println("We found it!");
                     done=true;
                 }
