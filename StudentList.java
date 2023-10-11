@@ -1,9 +1,11 @@
+//file name StudentList.java
 import java.io;
 import java.text.*;
 import java.util.*;
 public class StudentList{
     public static void main(String[] args){
-    if(args[0].equals("a")){
+    //checking arguments
+        if(args[0].equals("a")){
         System.outprintln("Loading data ...");
         try{
             BufferedReader s= new BufferedReader(
@@ -22,6 +24,7 @@ public class StudentList{
             }
         }
     }
+    //checking arguments
     else if(args[0].equals("r")){
         System.out.println("Loading data...");
         try{
@@ -60,6 +63,7 @@ public class StudentList{
 }
 
 }
+//checking arguments
 else if(args[0].contains("?")){
     System.out.println("Loading data...");
     try{
@@ -82,6 +86,7 @@ else if(args[0].contains("?")){
         System.out.println("Data Loaded.");
     }
 }
+//checking arguments
 else if(args[0].contains("c")){
     System.out.println("Loading data...");
     try{
