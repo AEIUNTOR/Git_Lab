@@ -20,7 +20,7 @@ public class StudentList{
                 System.out.println(j);
                 
             }catch (Exception e){
-                System.out.println("Data Loaded.");
+                System.out.println("Data Loaded...");
             }
         }
     }
@@ -41,7 +41,7 @@ public class StudentList{
             System.out.println(i[y]);
 
         }catch(Exception e){
-            System.out.println("Data Loaded.");
+            System.out.println("Data Loaded...");
         }
 
     }
@@ -59,7 +59,7 @@ public class StudentList{
             string.write(", "+t+"\n List last updated on "+dateformat);
             string.close();
 }catch(Exception e){
-    System.out.println("Data Loaded.");
+    System.out.println("Data Loaded...");
 }
 
 }
@@ -83,7 +83,7 @@ else if(args[0].contains("?")){
                 }
             }
     }catch(Exception e){
-        System.out.println("Data Loaded.");
+        System.out.println("Data Loaded...");
     }
 }
 //checking arguments
@@ -111,7 +111,7 @@ else if(args[0].contains("c")){
             }
             System.out.println(count+"word(string) found "+ a.length);
         }catch(Exception e){
-            System.out.println("Data Loaded.");
+            System.out.println("Data Loaded...");
         }
     }
 }
