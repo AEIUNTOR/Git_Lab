@@ -100,7 +100,7 @@ else if(args[0].contains("c")){
             boolean in_word=false;
             int count=0;
             for(char c:a){
-                if(c==' '){
+                if(c==','){
                     if(!in_word){
                         count++;
                         in_word =true;
