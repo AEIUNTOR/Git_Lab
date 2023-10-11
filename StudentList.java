@@ -36,8 +36,12 @@ public class StudentList{
                 String r=string.readLine();
                 System.out.println(r);
             String i[]=r.split(",");
+ step#7
             Random var=new Random();
             int y=var.nextInt(4); //4 should be added
+
+            
+
             System.out.println(i[y]);
 
         }catch(Exception e){
@@ -101,8 +105,11 @@ else if(args[0].contains("c")){
             char array[]=Data.toCharArray();
             boolean in_word=false;
             int count=0;
+ step#7
             for(char c:array){
                 if(c==','){ // simplifies the count logic
+
+
                     if(!in_word){
                         count++;
                         in_word =true;
