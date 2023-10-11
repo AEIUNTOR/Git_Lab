@@ -36,7 +36,7 @@ public class StudentList{
                 String r=s.readLine();
                 System.out.println(r);
             String i[]=r.split(",");
-            Random x=new Random();
+            Random x=new Random(4);//added 4 here
             int y=x.nextInt();
             System.out.println(i[y]);
 
@@ -100,7 +100,7 @@ else if(args[0].contains("c")){
             boolean in_word=false;
             int count=0;
             for(char c:a){
-                if(c==' '){
+                if(c==','){
                     if(!in_word){
                         count++;
                         in_word =true;
