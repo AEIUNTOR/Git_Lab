@@ -1,9 +1,11 @@
+//file name StudentList.java
 import java.io;
 import java.text.*;
 import java.util.*;
 public class StudentList{
     public static void main(String[] args){
-    if(args[0].equals("a")){
+    //checking arguments
+        if(args[0].equals("a")){
         System.outprintln("Loading data ...");
         try{
             BufferedReader s= new BufferedReader(
@@ -22,6 +24,7 @@ public class StudentList{
             }
         }
     }
+    //checking arguments
     else if(args[0].equals("r")){
         System.out.println("Loading data...");
         try{
@@ -33,7 +36,7 @@ public class StudentList{
                 String r=s.readLine();
                 System.out.println(r);
             String i[]=r.split(",");
-            Random x=new Random();
+            Random x=new Random(4);//added 4 here
             int y=x.nextInt();
             System.out.println(i[y]);
 
@@ -60,6 +63,7 @@ public class StudentList{
 }
 
 }
+//checking arguments
 else if(args[0].contains("?")){
     System.out.println("Loading data...");
     try{
@@ -82,6 +86,7 @@ else if(args[0].contains("?")){
         System.out.println("Data Loaded.");
     }
 }
+//checking arguments
 else if(args[0].contains("c")){
     System.out.println("Loading data...");
     try{
@@ -95,7 +100,7 @@ else if(args[0].contains("c")){
             boolean in_word=false;
             int count=0;
             for(char c:a){
-                if(c==' '){
+                if(c==','){
                     if(!in_word){
                         count++;
                         in_word =true;
